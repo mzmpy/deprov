@@ -1,8 +1,6 @@
-const webpack = require('webpack')
-const WebpackDevServer = require('webpack-dev-server')
-
 const path = require('path')
-const { AutomaticPrefetchPlugin } = require('webpack')
+const webpack = require(path.resolve('node_modules/webpack/lib/index.js'))
+const WebpackDevServer = require(path.resolve('node_modules/webpack-dev-server/lib/Server.js'))
 
 const defaultDevServerOptions = {
   allowedHosts: 'auto',
